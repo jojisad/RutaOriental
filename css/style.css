@@ -1,0 +1,594 @@
+/* Estilos generales para empezar */
+/* Estilo para la imagen del logo en la navegación */
+.logo-image {
+    max-height: 40px; /* Ajusta este valor según el tamaño que desees */
+    width: auto; /* Mantiene la proporción original de la imagen */
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: #f9f7fd; /* Un color lavanda muy claro como el del boceto */
+}
+
+/* Estilos de la Barra de Navegación */
+.main-header {
+    background-color: #fff; /* Fondo blanco */
+    border-bottom: 1px solid #e0e0e0; /* Borde inferior sutil */
+    padding: 10px 5%; /* Espaciado interno: 10px arriba/abajo, 5% a los lados */
+}
+
+.main-nav {
+    display: flex; /* ¡La magia de Flexbox para alinear todo! */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.logo-container {
+    /* Por ahora no necesita estilos, pero lo tenemos listo */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre los dos logos */
+}
+
+.nav-links {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Pone los enlaces en una fila */
+    gap: 25px; /* Espacio entre cada enlace */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #333; /* Color de texto oscuro */
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #6a3ab2; /* Color morado al pasar el mouse */
+}
+
+/* Estilos del Botón */
+.btn-download {
+    background-color: #6a3ab2; /* Color morado principal */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background-color: #562da4; /* Un morado un poco más oscuro al pasar el mouse */
+}
+/* Estilos del Contenedor Principal */
+.container {
+    max-width: 1100px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 20px; /* Un poco de espacio a los lados */
+}
+
+/* Estilos de la Sección Héroe */
+.hero-section {
+    padding: 80px 0; /* Espaciado vertical grande */
+}
+
+.hero-container {
+    display: flex; /* Activamos Flexbox para las columnas */
+    align-items: center; /* Alineamos verticalmente las columnas */
+    gap: 40px; /* Espacio entre la columna de texto y la de imagen */
+}
+
+.hero-text {
+    flex: 1; /* La columna de texto tomará el espacio disponible */
+}
+
+.hero-image {
+    flex: 1; /* La columna de imagen también tomará el espacio disponible */
+    text-align: center; /* Centramos la imagen dentro de su columna */
+}
+
+.hero-image img {
+    max-width: 100%; /* La imagen no será más ancha que el 70% de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos de los Textos del Héroe */
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.hero-text h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #6a3ab2; /* Morado principal */
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Estilos de la Lista de Características */
+.features-list {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.features-list li {
+    padding-left: 25px; /* Espacio para el 'check' */
+    margin-bottom: 12px;
+    position: relative; /* Necesario para posicionar el 'check' */
+}
+
+/* Creamos el 'check' con CSS */
+.features-list li::before {
+    content: '✓'; /* El símbolo de check */
+    color: #6a3ab2; /* Color morado */
+    font-weight: bold;
+    position: absolute; /* Lo posicionamos respecto al li */
+    left: 0;
+}
+
+/* Estilos para los botones de las tiendas */
+.store-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.store-btn:hover {
+    border-color: #6a3ab2;
+    background-color: #f9f7fd;
+}
+/* Estilos de la Sección Problema */
+.problem-section {
+    background-color: #fff; /* Fondo blanco para contrastar */
+    padding: 80px 0;
+}
+
+.problem-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.problem-image {
+    flex: 1; /* La columna de imagen ocupa la mitad del espacio */
+}
+
+.problem-image img {
+    width: 100%; /* La imagen ocupa todo el ancho de su columna */
+    border-radius: 12px; /* Bordes redondeados como en el diseño */
+}
+
+.problem-text {
+    flex: 1; /* La columna de texto ocupa la otra mitad */
+}
+
+.problem-text h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+/* Estilos de la lista de problemas */
+.problem-list {
+    list-style: none;
+    padding: 0;
+}
+
+.problem-list li {
+    padding-left: 30px; /* Espacio para el ícono */
+    margin-bottom: 16px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Creamos los íconos con CSS */
+.problem-list li::before {
+    content: 'ⓧ'; /* Usaremos este ícono como placeholder */
+    color: #c44569; /* Un color rojizo/rosado para problemas */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* Estilos de la Sección Solución */
+.solution-section {
+    padding: 80px 0;
+    background-color: #f9f7fd; /* Volvemos al fondo lavanda claro */
+}
+
+/* Estilo para los títulos de sección */
+.section-title {
+    text-align: center; /* Centramos el título */
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* La magia de CSS Grid */
+.features-grid {
+    display: grid; /* ¡Activamos CSS Grid! */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 30px; /* Espacio de 30px entre cada tarjeta (horizontal y vertical) */
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* AÑADIMOS border-color a la transición para que el cambio sea suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px); /* La levantamos un poco más */
+    box-shadow: 0 8px 20px rgba(90, 45, 164, 0.15); /* Sombra más pronunciada y con un toque de color */
+    border-color: #6a3ab2; /* El borde se vuelve morado */
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+}  
+/* Estilos de la Sección Valores (CORREGIDOS CON ÍCONOS) */
+.values-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.value-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.value-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* CAMBIO: Preparamos el pseudo-elemento para usar Font Awesome */
+.value-card::before {
+    font-family: "Font Awesome 6 Free"; /* Le decimos que use la fuente de íconos */
+    font-weight: 900; /* Usamos el estilo sólido de los íconos */
+    display: block;
+    font-size: 36px;
+    color: #6a3ab2;
+    margin-bottom: 15px;
+    /* El 'content' se definirá individualmente a continuación */
+}
+
+/* NUEVO: Asignamos un ícono único a cada tarjeta */
+/* 1. Seguridad (Escudo) */
+.values-grid .value-card:nth-child(1)::before {
+    content: "\f3ed";
+}
+/* 2. Comodidad (Carita Feliz) */
+.values-grid .value-card:nth-child(2)::before {
+    content: "\f118";
+}
+/* 3. Eficiencia (Rayo) */
+.values-grid .value-card:nth-child(3)::before {
+    content: "\f0e7";
+}
+/* 4. Confianza (Check en Círculo) */
+.values-grid .value-card:nth-child(4)::before {
+    content: "\f058";
+}
+
+/* Espacio para los íconos (usaremos pseudo-elementos de nuevo) */
+.value-card::before {
+    content: '★'; /* Ícono placeholder. Puede ser cualquier símbolo */
+    display: block;
+    font-size: 36px;
+    color: #6a3ab2; /* Color morado principal */
+    margin-bottom: 15px;
+}
+/* Estilos de la Sección Cómo Funciona */
+.how-it-works-section {
+    padding: 80px 0;
+    background-color: #f9f7fd; /* Volvemos al fondo lavanda */
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas, como en la sección de Solución */
+    gap: 30px;
+}
+
+.step-card {
+    text-align: center; /* Centramos el contenido */
+    padding: 30px;
+}
+
+.step-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6a3ab2; /* Morado principal */
+    margin-bottom: 20px;
+    /* Dejamos un espacio para el ícono que irá arriba */
+    padding-top: 50px; 
+    position: relative;
+}
+
+/* Preparamos el pseudo-elemento para usar Font Awesome */
+.step-card::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: block;
+    font-size: 36px;
+    color: #6a3ab2;
+    margin-bottom: 15px;
+}
+
+/* Asignamos un ícono único a cada paso */
+/* 1. Descarga */
+.steps-grid .step-card:nth-child(1)::before {
+    content: "\f019";
+}
+/* 2. Ubicación */
+.steps-grid .step-card:nth-child(2)::before {
+    content: "\f601";
+}
+/* 3. Viaja (Rutas) */
+.steps-grid .step-card:nth-child(3)::before {
+    content: "\f074";
+}
+/* Estilos de la Sección de Precios (CORREGIDOS) */
+.pricing-section {
+    padding: 80px 0;
+    background-color: #f9f7fd; /* CAMBIO: Fondo lavanda para la sección completa */
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch; /* CAMBIO: Para que las tarjetas siempre tengan la misma altura */
+}
+
+.pricing-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* CAMBIO: Necesario para los detalles nuevos */
+}
+
+/* Estilo especial para la tarjeta recomendada */
+.pricing-card.recommended {
+    border: 2px solid #6a3ab2; /* CAMBIO: Borde morado más grueso */
+    /* CAMBIO: Eliminamos el fondo lavanda y el escalado para un look más limpio */
+}
+
+/* NUEVO: Detalle de puntos en la tarjeta recomendada */
+.pricing-card.recommended::before {
+    content: '•••';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 16px;
+    letter-spacing: -2px;
+    color: #ccc;
+}
+
+
+.plan-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+.plan-tag.premium {
+    background-color: #6a3ab2;
+    color: #fff;
+    border: none;
+}
+
+.plan-tag.recommended-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-card p {
+    color: #555;
+    margin-bottom: 30px;
+    flex-grow: 1; 
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.plan-features li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.plan-features li::before {
+    content: '✓';
+    color: #6a3ab2;
+    position: absolute;
+    left: 0;
+}
+
+/* CAMBIO: Íconos de estrella para el plan premium */
+.pricing-card.recommended .plan-features li::before {
+    content: '☆';
+    color: #6a3ab2;
+    font-weight: bold;
+}
+
+
+/* Botones (sin cambios, pero se incluyen para que sea un solo bloque) */
+.btn-secondary {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #6a3ab2;
+    color: #6a3ab2;
+    background-color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #6a3ab2;
+    color: #fff;
+}
+
+.btn-primary {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    background-color: #6a3ab2;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #562da4;
+}
+/* =========== ANIMACIÓN DE ENTRADA PARA LAS TARJETAS DE SOLUCIÓN =========== */
+
+/* 1. Definimos la animación que queremos */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. Aplicamos la animación a todas las tarjetas */
+.feature-card {
+    /* Le decimos que empiece invisible para que la animación funcione */
+    opacity: 0; 
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* 3. (La Magia) Añadimos un retraso diferente a cada tarjeta para el efecto escalonado */
+.features-grid .feature-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.features-grid .feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.features-grid .feature-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.features-grid .feature-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.features-grid .feature-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.features-grid .feature-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+/* =========== ESTILOS PARA ÍCONOS Y ETIQUETAS PREMIUM =========== */
+
+/* Estilo para los nuevos íconos */
+.feature-card .fa-solid {
+    font-size: 28px; /* Tamaño del ícono */
+    color: #6a3ab2; /* Color morado principal */
+    margin-bottom: 20px; /* Espacio entre el ícono y el título */
+}
+
+/* Estilo para la etiqueta "Premium" */
+.premium-tag {
+    display: inline-block;
+    background-color: #e0f2f1;
+    color: #00796b;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    flex-shrink: 0; /* Evita que la etiqueta se encoja */
+}
